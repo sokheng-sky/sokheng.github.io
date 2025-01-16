@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="BMI.css">
+</head>
+<div>
+    <div class="container">
+        <div class="box1" >
+           <div class="logo">
+                BMI
+           </div>
+           <div class="Mean">
+            BMI(The Body Mass Index ) គឺជា​ការ​វាស់​ស្ទង់​ពី​ភាព​គ្មាន​ខ្លាញ់​របស់​មនុស្ស​ម្នាក់​ដោយ​ផ្អែក​លើ​កម្ពស់ និង​ទម្ងន់​របស់​ពួកគេ ហើយ​មាន​គោលបំណង​កំណត់​បរិមាណ​ជាលិកា។
+           </div>
+        </div>
+        <div class="box3">
+            <h1>ទម្ងន់ស្ដង់ដារបស់ BMI</h1>
+           <table>
+            <tr>
+                <td>Severe Thinness</td>
+                <td>Moderate thinness</td>
+                <td>milk thinness</td>
+                <td>Normal</td>
+                <td>Overweicht</td>
+                <td>Obese class i</td>
+                <td>Obese class ii</td>
+                <td>Obese class iii</td>
+            </tr>
+            <tr>
+                <td><16</td>
+                <td>16-17</td>
+                <td>17-18.5</td>
+                <td>18.5-25</td>
+                <td>25-30</td>
+                <td>30-35</td>
+                <td>35-40</td>
+                <td>>40</td>
+            </tr>
+           </table>
+
+           <div class="box4">
+            Weight: <input type="text" name="" id="txt_1" >
+            Hight: <input type="text" name="" id="txt_2" >
+            Analysis: <input type="text" id="result" >
+            <input type="button" value="Summit" onclick="a()">
+        </div>
+        <script>
+            
+            function a(){
+                var num1 =document.getElementById("txt_1");
+                var num2 =document.getElementById("txt_2");
+                var res = parseFloat(num1.value) / (parseFloat(num2.value)*parseFloat(num2.value));
+                document.getElementById("result").value=res;
+            }
+        </script>
+        </div>
+    </div>
+    
+
+
+<div>
+</html>
