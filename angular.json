@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "assigment": {
+    "home": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/assigment",
+            "outputPath": "dist/home",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -39,7 +39,12 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "server": "src/main.server.ts",
+            "outputMode": "server",
+            "ssr": {
+              "entry": "src/server.ts"
+            }
           },
           "configurations": {
             "production": {
@@ -69,10 +74,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "assigment:build:production"
+              "buildTarget": "home:build:production"
             },
             "development": {
-              "buildTarget": "assigment:build:development"
+              "buildTarget": "home:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -104,6 +109,6 @@
     }
   },
   "cli": {
-    "analytics": "e373f161-dcfb-4f9c-b201-0c85196af4e4"
+    "analytics": "b9625ec8-80b3-46aa-bbb0-0d43b88ba866"
   }
 }
